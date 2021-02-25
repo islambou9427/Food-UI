@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var search : String=""
     var body: some View {
-        VStack (alignment: .leading ) {
+        VStack (alignment: .leading , spacing: 16) {
             
             HomeNavBarView()
             Text("Bonjour, Islam")
@@ -20,6 +22,9 @@ struct ContentView: View {
             Text("What ould you like to eat today ? ")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            
+            SearchAndFilterView(search: $search)
+            
             
             Spacer()
             
@@ -52,6 +57,29 @@ struct HomeNavBarView: View {
             
             
             
+        }
+    }
+}
+
+struct SearchAndFilterView: View {
+    @Binding var search: String
+    var body: some View {
+        HStack {
+            HStack {
+                Image(uiImage: #imageLiteral(resourceName: "search"))
+                
+                TextField("search for recipes" , text : $search)
+                
+            }
+            .padding()
+            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+            .cornerRadius(8)
+            
+            Image(uiImage: #imageLiteral(resourceName: "filter"))
+                .padding()
+                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
+                
+                .cornerRadius(8)
         }
     }
 }
