@@ -15,6 +15,7 @@
 		0440AF4E25CC7A1D00007CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0440AF4C25CC7A1D00007CC2 /* LaunchScreen.storyboard */; };
 		0440AF5925CC7A1D00007CC2 /* Food_Delivery_UiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440AF5825CC7A1D00007CC2 /* Food_Delivery_UiTests.swift */; };
 		0440AF6425CC7A1D00007CC2 /* Food_Delivery_UiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440AF6325CC7A1D00007CC2 /* Food_Delivery_UiUITests.swift */; };
+		0477682925E99BA700814360 /* preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 0477682825E99BA700814360 /* preview.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0440AF5F25CC7A1D00007CC2 /* Food Delivery UiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food Delivery UiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0440AF6325CC7A1D00007CC2 /* Food_Delivery_UiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_Delivery_UiUITests.swift; sourceTree = "<group>"; };
 		0440AF6525CC7A1D00007CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0477682825E99BA700814360 /* preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				0440AF4725CC7A1D00007CC2 /* Assets.xcassets */,
 				0440AF4C25CC7A1D00007CC2 /* LaunchScreen.storyboard */,
 				0440AF4F25CC7A1D00007CC2 /* Info.plist */,
+				0477682825E99BA700814360 /* preview.png */,
 				0440AF4925CC7A1D00007CC2 /* Preview Content */,
 			);
 			path = "Food Delivery Ui";
@@ -240,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0477682925E99BA700814360 /* preview.png in Resources */,
 				0440AF4E25CC7A1D00007CC2 /* LaunchScreen.storyboard in Resources */,
 				0440AF4B25CC7A1D00007CC2 /* Preview Assets.xcassets in Resources */,
 				0440AF4825CC7A1D00007CC2 /* Assets.xcassets in Resources */,
