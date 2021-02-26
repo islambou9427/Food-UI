@@ -16,7 +16,7 @@ struct ContentView: View {
             
             HomeNavBarView()
             Text("Bonjour, Islam")
-                .font(.caption)
+                .font(.system(size: 20.0))
                 .fontWeight(.medium)
                 .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             Text("What ould you like to eat today ? ")
@@ -24,6 +24,9 @@ struct ContentView: View {
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             
             SearchAndFilterView(search: $search)
+            
+            TabTitleView(title: "Today's Fresh Recipes")
+            
             
             
             Spacer()
@@ -80,6 +83,27 @@ struct SearchAndFilterView: View {
                 .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.blue/*@END_MENU_TOKEN@*/)
                 
                 .cornerRadius(8)
+        }
+    }
+}
+
+struct TabTitleView: View {
+    var title : String
+    var body: some View {
+        HStack{
+            
+            Text(title)
+                .fontWeight(.semibold)
+                .font(.system(size: 20.0))
+            Spacer()
+            
+            Text("See All")
+                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                .font(.system(size: 20.0))
+                .fontWeight(.medium)
+            
+            
+            
         }
     }
 }
